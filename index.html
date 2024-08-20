@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI OS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <div id="what">
+       <div id="wm1"> Where did your phone go?</div>
+       <div id="wm2">Welp, I guess you messed up up.</div>
+     </div>
+    <div class="phone" id="phone">
+        <div class="status-bar">
+            <div class="time" id="time-display">❔</div>
+            <div class="osName" id="version">C-OS v2</div>
+            <div id="network">📶</div>
+        </div>
+        <!-- Lock Screen -->
+        <div class="lock-screen" id="lock-screen">
+            <div class="lock-time" id="lock-time-display">❔</div>
+            <div class="lock-message" id="lock-message"><strong>Error: </strong><br>Please <a href="index.html">refresh</a> the page.</div>
+            <h6 id="error-info">You're recieving this message because the JavaScript did not run due to rapid refreshing or an error. Please refresh.</h6>
+        </div>
+
+        <!-- Home Screen -->
+        <div class="home-screen" id="home-screen" style="display: none;">
+            <div class="app-grid">
+                <div class="app-icon" data-app="App1"><span>AI</span></div>
+                <div class="app-icon" data-app="App2"><span>Videos</span></div>
+                <div class="app-icon" data-app="App3"><span>ChatAPP</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div id="toast-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
